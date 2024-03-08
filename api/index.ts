@@ -5,7 +5,7 @@ export const router = express.Router();
 
 router.get("/", (req, res) => {
   res.send(
-    "IMDB API <br/>You can search movie by route /movies/{queyParam} || NOT SEND"
+    "IMDB API <br/>You can search movie by route /movies/{queyParam: name} || NOT SEND"
   );
 });
 

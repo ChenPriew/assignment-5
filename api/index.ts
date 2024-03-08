@@ -4,7 +4,9 @@ import { conn } from "../dbconnect";
 export const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.send("IMDB API");
+  res.send(
+    "IMDB API <br/>You can search movie by route /movies/{queyParam} || NOT SEND"
+  );
 });
 
 //SearchMovie

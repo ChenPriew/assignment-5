@@ -3,6 +3,10 @@ import { conn } from "../dbconnect";
 
 export const router = express.Router();
 
+router.get("/", (req, res) => {
+  res.send("IMDB API");
+});
+
 //SearchMovie
 router.get("/movies", (req, res) => {
   const { name } = req.query;
